@@ -1,5 +1,9 @@
+html {
+  min-width: 240px;
+}
+
 header {
-  padding-bottom: 55px;
+  padding-bottom: 60px;
 }
 
 header > nav {
@@ -11,7 +15,6 @@ main {
 }
 
 main > .mid-section {
-  padding-top: 3px;
   padding-bottom: 55px;
 }
 
@@ -29,8 +32,6 @@ main > img {
 /*footer {
   border-top: .05rem solid #e5e5e5;
 }*/
-
-
 
 footer > div {
   padding-bottom: 55px;
