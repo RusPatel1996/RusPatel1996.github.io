@@ -10,7 +10,7 @@ main {
   border-bottom: .05rem solid #e5e5e5;
 }
 
-main > .container {
+main > .mid-section {
   padding-top: 55px;
   padding-bottom: 100px;
 }
