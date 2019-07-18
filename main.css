@@ -44,3 +44,10 @@ main > img {
 footer > div {
   padding-bottom: 55px;
 }
+
+:target :before {
+    content:"";
+    display:block;
+    height:110px; /* fixed header height*/
+    margin:-110px 0 0; /* negative fixed header height */
+}
