@@ -37,9 +37,9 @@ main > img {
     object-fit: contain;
 }
 
-/*footer {
+footer {
   border-top: .05rem solid #e5e5e5;
-}*/
+}
 
 footer > div {
   padding-bottom: 55px;
