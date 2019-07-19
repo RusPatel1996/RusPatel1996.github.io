@@ -12,29 +12,38 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
   <link rel="stylesheet" href="https://RusPatel1996.github.io/main.css">
-  <!--<link rel="stylesheet" href="C:\Users\ruspatel\Documents\GitHub\RusPatel1996.github.io\main.css">-->
+  <!-- <link rel="stylesheet" href="C:\Users\ruspatel\Documents\GitHub\RusPatel1996.github.io\main.css"> -->
+
+  <!-- Jquery CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- The legendary script : gets rid of the # part from the url and allows scroll with offset on top -->
+  <script>
+  $(document).on('click', 'a', function(evt) {
+      if(evt.target.hash !== '') {
+          $('html, body').animate({ scrollTop: $( evt.target.hash ).offset().top - 110 }, 0);
+          return false;
+      }
+  });
+  </script>
 
   <title>Rush Patel Landing Page</title>
 </head>
 <body>
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-  <header>
+
+
+  <header id="top_of_page">
     <div class="navbar navbar-expand-md align-items-center bg-white border-bottom shadow-sm fixed-top">
-      <h5 class="navbar-brand font-weight-normal my-md-0 mr-md-2" style="font-size: 1.80rem; color:#343a40!important;"><strong><u><a class="text-dark" href="">Rush Patel</a></u></strong></h5>
+      <h5 class="navbar-brand font-weight-normal my-md-0 mr-md-2" style="font-size: 1.80rem; color:#343a40!important;"><strong><u><a class="text-dark" href="#top_of_page">Rush Patel</a></u></strong></h5>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fas fa-th"></i>
       </button>
       <div class="collapse navbar-collapse justify-content-end my-md-0 mr-md-2" id="navbarCollapse">
         <nav class="navbar-nav">
-          <a class="nav-link text-dark" href="#about_me">About Me</a>
-          <a class="nav-link text-dark" href="#experience">Experience</a>
-          <a class="nav-link text-dark" href="#education">Education</a>
-          <a class="nav-link text-dark" href="#projects">Projects</a>
+          <a class="nav-link text-dark a_underline" href="#about_me">About Me</a>
+          <a class="nav-link text-dark a_underline" href="#experience"style="border-left: 1px solid #ebebeb">Experience</a>
+          <a class="nav-link text-dark a_underline" href="#education"style="border-left: 1px solid #ebebeb">Education</a>
+          <a class="nav-link text-dark a_underline" href="#projects" style="border-left: 1px solid #ebebeb">Projects</a>
           <!--
           <a class="nav-link text-dark" href="">Skills</a>
           <a class="nav-link text-dark" href="">Awards & Scholarships</a>
@@ -46,7 +55,7 @@
 
 
   <main>
-    <div class="shadow-sm text-center p-md-3 bg-light text-dark" style="border-bottom: .2rem solid #e5e5e5; background-image: url('https://RusPatel1996.github.io/Img/bg.jpg'); background-position:top; background-repeat: no-repeat; background-size:cover; height:100vh">
+    <div class="shadow-sm text-center p-md-3 bg-light text-dark" style="border-bottom: .2rem solid #e5e5e5; background-image: url('https://RusPatel1996.github.io/Img/bg.jpg'); background-attachment: fixed; background-position:center; background-repeat: no-repeat; background-size:cover; height:100vh">
       <div class="container col-md-8 p-lg-3 mx-auto my-5">
         <img class="bd-placeholder-img rounded-circle" src="https://RusPatel1996.github.io/Img/me.jpg" height="150px" width="150px" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
         <h1 class="display-4 font-weight-normal">Rush <strong>Patel</strong></h1>
@@ -94,26 +103,26 @@
         <!-- My Links -->
         <table class="table table-borderless table-hover">
             <tr>
-              <td class="text-center" style="width:3%; font-size:25px;"><i class="fab fa-linkedin"></i></td>
-              <td style="vertical-align: middle;"><a class="text-dark" href="http://www.linkedin.com/in/Rushabh-rush-patel/fr"><u>Rushabh-Rush-Patel</u></a></td>
-              <td class="text-center" style="width:3%; font-size:25px"><i class="fas fa-mobile-alt"></i></td>
-              <td style="vertical-align: middle;"><a class="text-dark" href="tel:587-370-4181"><u>587-370-4181</u></a></td>
+              <td class="text-center links_icons"><i class="fab fa-linkedin"></i></td>
+              <td class="links"><a class="text-dark" href="http://www.linkedin.com/in/Rushabh-rush-patel/fr"><u>Rushabh-Rush-Patel</u></a></td>
+              <td class="text-center links_icons"><i class="fas fa-mobile-alt"></i></td>
+              <td class="links"><a class="text-dark" href="tel:587-370-4181"><u>587-370-4181</u></a></td>
             </tr>
             <tr>
-              <td class="text-center" style="width:3%; font-size:25px"><i class="fab fa-github"></i></td>
-              <td style="vertical-align: middle;"><a class="text-dark" href="https://www.github.com/RusPatel1996"><u>RusPatel1996</u></a></td>
-              <td class="text-center" style="width:3%; font-size:25px"><i class="fas fa-home"></i></td>
-              <td style="vertical-align: middle;">Waterloo, Ontario</td>
+              <td class="text-center links_icons"><i class="fab fa-github"></i></td>
+              <td class="links"><a class="text-dark" href="https://www.github.com/RusPatel1996"><u>RusPatel1996</u></a></td>
+              <td class="text-center links_icons"><i class="fas fa-home"></i></td>
+              <td class="links">Waterloo, Ontario</td>
             </tr>
             <tr>
-              <td class="text-center" style="width:3%; font-size:25px"><i class="fab fa-hackerrank"></i></td>
-              <td style="vertical-align: middle;"><a class="text-dark" href="https://www.hackerrank.com/rush_patel"><u>Rush_Patel</u></a></td>
-              <td class="text-center" style="width:3%; font-size:25px"><i class="fas fa-file-download"></td>
-              <td style="vertical-align: middle;"><a class="text-dark" href="https://RusPatel1996.github.io/Docs/Rush_Resume.pdf" download><u>Resume</u></a></td>
+              <td class="text-center links_icons"><i class="fab fa-hackerrank"></i></td>
+              <td class="links"><a class="text-dark" href="https://www.hackerrank.com/rush_patel"><u>Rush_Patel</u></a></td>
+              <td class="text-center"><i class="fas fa-file-download"></td>
+              <td class="links"><a class="text-dark" href="https://RusPatel1996.github.io/Docs/Rush_Resume.pdf" download><u>Resume</u></a></td>
             </tr>
             <tr>
-              <td class="text-center" style="width:3%; font-size:25px"><i class="fas fa-envelope"></i></td>
-              <td style="vertical-align: middle;"><a class="text-dark" href="mailto:RusPatel1996@gmail.com"><u>RusPatel1996@gmail.com</u></a></td>
+              <td class="text-center links_icons" style="width:3%; font-size:25px"><i class="fas fa-envelope"></i></td>
+              <td class="links"><a class="text-dark" href="mailto:RusPatel1996@gmail.com"><u>RusPatel1996@gmail.com</u></a></td>
               <td colspan="2"></td>
             </tr>
         </table>
@@ -131,15 +140,15 @@
             <!-- BlackBerry -->
             <table class="table table-borderless table-hover">
                 <tr>
-                  <th rowspan="3" style="border-right: 2px solid black; width: 155px;">May 2019<br>Present</th>
+                  <td rowspan="3" class="experience_date">May 2019<br>Present</td>
                 </tr>
                 <tr>
-                  <th class="lead" style="padding-left: 20px;">Beta Software Quality Student
-                      <br> BlackBerry - Waterloo, Ontario
-                  </th>
+                  <td class="lead experience_title"><strong>Beta Software Quality Student
+                      <br> BlackBerry - Waterloo, Ontario</strong>
+                  </td>
                 </tr>
                 <tr>
-                  <td style="padding-left: 20px;">
+                  <td class="experience_data">
                     <ul class="fa-ul"></i>
                       <li><span class="fa-li"><i class="fas fa-chevron-circle-right"></i></span> Utilized JIRA ticketing management system to track bug reports, liaise with users, and delegate defects to appropriate teams on a daily basis.</li>
                       <li><span class="fa-li"><i class="fas fa-chevron-circle-right"></i></span> Analyzed and reported root causes of bugs on BlackBerry apps and devices through log analysis and testing.</li>
@@ -152,15 +161,15 @@
             <!-- Agriculture and Agri-Food Canada -->
             <table class="table table-borderless table-hover">
                 <tr>
-                  <th rowspan="3" style="border-right: 2px solid black; width: 155px;">August 2018<br>October 2018</th>
+                  <td rowspan="3" class="experience_date">August 2018<br>October 2018</td>
                 </tr>
                 <tr>
-                  <th style="padding-left: 20px;">IT Helpdesk Technician
-                      <br> Agriculture and Agri-Food Canada - Lethbridge, Alberta
-                  </th>
+                  <td class="lead experience_title"><strong>IT Helpdesk Technician
+                      <br> Agriculture and Agri-Food Canada - Lethbridge, Alberta</strong>
+                  </td>
                 </tr>
                 <tr>
-                  <td style="padding-left: 20px;">
+                  <td class="experience_data">
                     <ul class="fa-ul">
                       <li><span class="fa-li"><i class="fas fa-chevron-circle-right"></i></span> Ensured that each computer was installed with an appropriate image.</li>
                       <li><span class="fa-li"><i class="fas fa-chevron-circle-right"></i></span> Provided standard and approved hardware/software support and maintenance.</li>
@@ -172,15 +181,15 @@
             <!-- Career Transitions -->
             <table class="table table-borderless table-hover">
                 <tr>
-                  <th rowspan="3" style="border-right: 2px solid black; width: 155px;">April 2017<br>June 2017</th>
+                  <td rowspan="3" class="experience_date">April 2017<br>June 2017</td>
                 </tr>
                 <tr>
-                  <th style="padding-left: 20px;">System Analyst and Developer
-                      <br> Career Transitions - Lethbridge, Alberta
-                  </th>
+                  <td class="lead experience_title"><strong>System Analyst and Developer
+                      <br> Career Transitions - Lethbridge, Alberta</strong>
+                  </td>
                 </tr>
                 <tr>
-                  <td style="padding-left: 20px;">
+                  <td class="experience_data">
                     <ul class="fa-ul">
                       <li><span class="fa-li"><i class="fas fa-chevron-circle-right"></i></span> Developed a fully functional desktop application with using agile software development model to allow data entry and perform custom queries on a database based on selected criteria.</li>
                       <li><span class="fa-li"><i class="fas fa-chevron-circle-right"></i></span> Developed various system proposals which defined the problem, project objectives, budget, and entity relationships.</li>
@@ -204,15 +213,15 @@
           <!-- U of L -->
           <table class="table table-borderless table-hover">
               <tr>
-                <th rowspan="3" style="width: 155px;">September 2017<br>Present</th>
+                <td rowspan="3" class="education_date">September 2017<br>Present</td>
               </tr>
               <tr>
-                <th style="padding-left: 20px;"> B.Sc. in Computer Science (Co-operative education program)
-                    <br> University of Lethbridge - Lethbridge, Alberta
+                <th class="lead education_title"><strong>B.Sc. in Computer Science (Co-operative education program)
+                    <br> University of Lethbridge - Lethbridge, Alberta</strong>
                 </th>
               </tr>
               <tr>
-                <td style="padding-left: 20px;">
+                <td class="education_data">
                   <ul class="fa-ul"></i>
                     <li><span class="fa-li"><i class="fas fa-chevron-circle-right"></i></span> Awarded Jason Lang Scholarship (2018)</li>
                     <li><span class="fa-li"><i class="fas fa-chevron-circle-right"></i></span> Awarded Post-Diploma Entrance Scholarship (2017)</li>
@@ -224,15 +233,15 @@
           <!-- Lethbridge College -->
           <table class="table table-sm table-borderless table-hover ">
               <tr>
-                <th rowspan="3" style="width: 155px;">September 2015<br>April 2017</th>
+                <td rowspan="3" class="education_date">September 2015<br>April 2017</td>
               </tr>
               <tr>
-                <th style="padding-left: 20px;"> Diploma in Information Technology
-                    <br> Lethbridge College - Lethbridge, Alberta
+                <th class="lead education_title"><strong>Diploma in Information Technology
+                    <br> Lethbridge College - Lethbridge, Alberta</strong>
                 </th>
               </tr>
               <tr>
-                <td style="padding-left: 20px;">
+                <td class="education_data">
                   <ul class="fa-ul">
                     <li><span class="fa-li"><i class="fas fa-chevron-circle-right"></i></span> Highest Distinction.</li>
                     <li><span class="fa-li"><i class="fas fa-chevron-circle-right"></i></span> Awarded Jason Lang Scholarship (2016)</li>
@@ -256,15 +265,15 @@
             <!-- Genome Interpretation Database -->
             <table class="table table-borderless table-hover">
                 <tr>
-                  <th rowspan="3" style="border-right: 2px solid black; width: 155px;">September 2017<br>April 2018</th>
+                  <td rowspan="3" class="project_date">September 2017<br>April 2018</td>
                 </tr>
                 <tr>
-                  <th style="padding-left: 20px;">Genome Interpretation Database
-                      <br> University of Lethbridge - Lethbridge, Alberta
-                  </th>
+                  <td class="lead project_title"><strong>Genome Interpretation Database
+                      <br> University of Lethbridge - Lethbridge, Alberta</strong>
+                  </td>
                 </tr>
                 <tr>
-                  <td style="padding-left: 20px;">
+                  <td class="project_data">
                     <ul class="fa-ul"></i>
                       <li><span class="fa-li"><i class="fas fa-chevron-circle-right"></i></span> Developed a user interface using .Net Framework to send dynamic queries, and allow data entry/file uploading from end-users.</li>
                       <li><span class="fa-li"><i class="fas fa-chevron-circle-right"></i></span> Implemented a PostgreSQL database for genome interpretation based on an entity-relationship diagram.</li>
@@ -275,15 +284,15 @@
             <!-- Client Information Database -->
             <table class="table table-borderless table-hover">
                 <tr>
-                  <th rowspan="3" style="border-right: 2px solid black; width: 155px;">April 2018<br>June 2018</th>
+                  <td rowspan="3" class="project_date">April 2018<br>June 2018</td>
                 </tr>
                 <tr>
-                  <th style="padding-left: 20px;">Client Information Database
-                      <br> Career Transitions - Lethbridge, Alberta
-                  </th>
+                  <td class="lead project_title"><strong>Client Information Database
+                      <br> Career Transitions - Lethbridge, Alberta</strong>
+                  </td>
                 </tr>
                 <tr>
-                  <td style="padding-left: 20px;">
+                  <td class="project_data">
                     <ul class="fa-ul">
                       <li><span class="fa-li"><i class="fas fa-chevron-circle-right"></i></span> Developed a fully functional desktop application using C\# to allow data entry and perform custom queries on a database based on selected criteria.</li>
                       <li><span class="fa-li"><i class="fas fa-chevron-circle-right"></i></span> Performed substantive analysis of an outdated system, and proposed new solutions based on the business requirements.</li>
@@ -292,18 +301,18 @@
                   </td>
                 </tr>
             </table>
-            <!-- Career Transitions -->
+            <!-- Bandwidth Accounting System -->
             <table class="table table-borderless table-hover">
                 <tr>
-                  <th rowspan="3" style="border-right: 2px solid black; width: 155px;">April 2017<br>June 2017</th>
+                  <td rowspan="3" class="project_date">April 2017<br>June 2017</td>
                 </tr>
                 <tr>
-                  <th style="padding-left: 20px;">Bandwidth Accounting System
-                      <br> Whipcord - Lethbridge, Alberta
-                  </th>
+                  <td class="lead project_title"><strong>Bandwidth Accounting System
+                      <br> Whipcord - Lethbridge, Alberta</strong>
+                  </td>
                 </tr>
                 <tr>
-                  <td style="padding-left: 20px;">
+                  <td class="project_data">
                     <ul class="fa-ul">
                       <li><span class="fa-li"><i class="fas fa-chevron-circle-right"></i></span> Developed a user-friendly web application to view client bandwidth overage from calculated Net-flow data using Nginx web server, Ruby on Rails framework, and PostgreSQL database.</li>
                     </ul>

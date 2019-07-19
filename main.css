@@ -1,5 +1,7 @@
 html {
   min-width: 240px;
+  scroll-behavior: smooth;
+
 }
 
 header {
@@ -14,14 +16,6 @@ main {
   border-bottom: .05rem solid #e5e5e5;
 }
 
-main > .jumbotron {
-  background-image: url("https://RusPatel1996.github.io/Img/bg.jpg");
-  height: 50%;
-  background-position:bottom;
-  background-repeat: no-repeat;
-  background-size:cover;
-}
-
 main > .mid-section {
   padding-bottom: 55px;
 }
@@ -31,12 +25,6 @@ main > .lower-section {
   text-anchor: middle;
 }
 
-main > img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-
 footer {
   border-top: .05rem solid #e5e5e5;
 }
@@ -44,13 +32,62 @@ footer {
 footer > div {
   padding-bottom: 55px;
 }
-
-:target :before {
-    content:"";
-    display:block;
-    height:110px; /* fixed header height*/
-    margin:-110px 0 0; /* negative fixed header height */
+nav > a {
+  font-weight: bold;
 }
+
+.a_underline:hover{
+  padding-top: 2px;
+  border-bottom: 5px solid #ededed;
+  transition: border-bottom 0.25s ease-out;
+}
+
+.links_icons {
+  width:3%;
+  font-size:25px;
+}
+
+.links {
+  vertical-align: middle;
+}
+
+.experience_date, .project_date {
+  border-right: 2px solid black !important;
+  width: 140px;
+  text-align:right;
+  padding-top: 10px !important;
+  padding-right:25px !important;
+}
+
+.project_date {
+  width: 155px;
+}
+
+.education_date {
+  width: 155px;
+  text-align:right;
+  padding-right: 25px !important;
+}
+
+.experience_title, .project_title {
+  padding: 5px 25px 10px 20px !important;
+}
+
+.education_title {
+  padding: 5px 25px 5px 20px !important;
+}
+
+.education_data {
+  padding: 5px 25px 5px 20px !important;
+}
+
+.experience_data, .project_data {
+  padding: 10px 25px 5px 20px !important;
+}
+
+
+
+
 
 .skill_tag {
   border: 1px solid black;
