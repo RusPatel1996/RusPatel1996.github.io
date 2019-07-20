@@ -1,7 +1,6 @@
 html {
   min-width: 240px;
   scroll-behavior: smooth;
-
 }
 
 header {
@@ -20,18 +19,14 @@ main > .mid-section {
   padding-bottom: 55px;
 }
 
-main > .lower-section {
-  padding-bottom: 55px;
-  text-anchor: middle;
-}
-
 footer {
-  border-top: .05rem solid #e5e5e5;
+  /*border-top: .05rem solid #e5e5e5;*/
 }
 
 footer > div {
   padding-bottom: 55px;
 }
+
 nav > a {
   font-weight: bold;
 }
@@ -53,7 +48,7 @@ nav > a {
 .links {
   vertical-align: middle!important;
   font-size: 17px;
-  padding: 10px 0px 10px 3% !important;
+  padding: 10px 0px 10px 2% !important;
 }
 
 .experience_date, .education_date, .project_date {
@@ -72,28 +67,23 @@ nav > a {
   padding: 10px 10px 10px 20px !important;
 }
 
-.skill_table_left {
-  border-right: 2px solid black !important;
-  text-align: right;
-  vertical-align: middle;
-  width: 14% !important;
-  min-width: 110px;
-  padding-right: 25px !important;
-}
-
-.skill_table_cat {
-  width: 15%;
-  min-width: 100px;
-}
-
-.skill_table_data {
-  padding: 10px 25px 5px 20px !important;
+.skill_tags {
+  width: 90%;
+  margin-left: 1%;
 }
 
 .skill_tag {
-  background-color: #184776;
+  /*background-color: #f2f3f3;
+  color: #838383 !important;
+  border: 1.2px solid #bbbbbb;
+  box-shadow: 0px 0px 1px #cccccc;*/
+  background-color: #f2f3f0;
+  color: #666666 !important;
+  border: 1.2px solid #aaaaaa;
+  box-shadow: 0px 0px 1px #bbbbbb;
   border-radius: 4px;
-  margin: 0px 0px 2px 1px;
-  padding: 2px 8px 3px 8px;
+  margin: 4px 2px 4px 2px;
+  padding: 3px 10px 3px 10px;
   display:inline-block;
+
 }
