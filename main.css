@@ -43,58 +43,57 @@ nav > a {
 }
 
 .links_icons {
-  width:3%;
   font-size:25px;
+  padding: 10px 0px 10px 0px !important;
+  width: 25px;
+  text-align: center;
+  vertical-align: middle!important;
 }
 
 .links {
-  vertical-align: middle;
+  vertical-align: middle!important;
+  font-size: 17px;
+  padding: 10px 0px 10px 3% !important;
 }
 
-.experience_date, .project_date {
+.experience_date, .education_date, .project_date {
   border-right: 2px solid black !important;
-  width: 140px;
-  text-align:right;
-  padding-top: 10px !important;
-  padding-right:25px !important;
+  text-align: right;
+  width: 14% !important;
+  min-width: 110px;
+  padding: 10px 25px 0px 0px !important;
 }
 
-.project_date {
-  width: 155px;
+.experience_title, .project_title, .education_title {
+  padding: 5px 10px 10px 20px !important;
 }
 
-.education_date {
-  width: 155px;
-  text-align:right;
+.experience_data, .project_data, .education_data {
+  padding: 10px 10px 10px 20px !important;
+}
+
+.skill_table_left {
+  border-right: 2px solid black !important;
+  text-align: right;
+  vertical-align: middle;
+  width: 14% !important;
+  min-width: 110px;
   padding-right: 25px !important;
 }
 
-.experience_title, .project_title {
-  padding: 5px 25px 10px 20px !important;
+.skill_table_cat {
+  width: 15%;
+  min-width: 100px;
 }
 
-.education_title {
-  padding: 5px 25px 5px 20px !important;
-}
-
-.education_data {
-  padding: 5px 25px 5px 20px !important;
-}
-
-.experience_data, .project_data {
+.skill_table_data {
   padding: 10px 25px 5px 20px !important;
 }
 
-
-
-
-
 .skill_tag {
-  border: 1px solid black;
-  background: white;
-  border-radius: 5px;
-  padding-top:1px;
-  padding-bottom: 2px;
-  padding-left: 6px;
-  padding-right:6px;
+  background-color: #184776;
+  border-radius: 4px;
+  margin: 0px 0px 2px 1px;
+  padding: 2px 8px 3px 8px;
+  display:inline-block;
 }
