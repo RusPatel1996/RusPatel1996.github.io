@@ -29,6 +29,8 @@ footer > div {
 
 nav > a {
   font-weight: bold;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
 }
 
 .a_underline:hover{
